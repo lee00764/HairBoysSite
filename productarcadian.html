@@ -1,0 +1,95 @@
+<!--Arcadian Matte Paste product page for website-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Arcadian Matte Paste</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body onload ="indivProdDesc()">
+		<header>
+			<!--Free shipping bar-->
+			<div class="freeshippingbar">
+				FREE SHIPPING ON ALL CANADIAN ORDERS OVER $50
+			</div>
+			<!--Logo area-->
+			<div class="logo-container">
+				<a class="nav-link" href=index.html><img src="./images/WebLogoSM.png" class="logo-header" alt="logo" /></a>
+			</div>
+			<!--Navigation bar and search bar-->
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href=index.html>Home</a></li>
+					<li><a class="nav-link" href=products.html>Products</a></li>
+					<li><a class="nav-link" href="index.html#brands">Brands</a></li>
+					<li><a class="nav-link" href="index.html#about-us">About Us</a></li>
+					<li>
+						<form name="search" action="results.html" onsubmit="return searchFunction();" method="get">
+							<div class ="searchDrop">
+							<button type="submit" id="searchButton"><img src="./images/searchicon.png" alt="searchicon"></button>
+								<div class="searchDropContent">
+									<input id="searchbar" type="text" placeholder="Search" onkeyup="searchfilter()">
+									<ul id="menulist">
+										<li class="menuprod"><a href ="productarcadian.html">Arcadian Matte Paste</a></li>
+										<li class="menuprod"><a href ="productarcadianstyling.html">Arcadian Styling Pomade</a></li>
+										<li class="menuprod"><a href ="productdapperboy.html">Dapper Boy Pomade</a></li>
+										<li class="menuprod"><a href ="productflagship.html">Flagship Dead Sea Clay</a></li>
+										<li class="menuprod"><a href ="productgrimgreasematte.html">Grim Grease Matte</a></li>
+										<li class="menuprod"><a href ="productgrimgrease.html">Grim Grease Medium</a></li>
+										<li class="menuprod"><a href ="productlockharts.html">Lockharts Gonzo Grease</a></li>
+										<li class="menuprod"><a href ="productreuzelgreen.html">Reuzel Green Pomade</a></li>
+										<li class="menuprod"><a href ="productreuzel.html">Reuzel Matte Pomade</a></li>
+										<li class="menuprod"><a href ="productshearrevival.html">Shear Revival American Gardens</a></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</nav>
+			<!--Cart and signup button-->
+			<div class="cart">
+				<img src="./images/cart.svg" alt="cart" />
+				<button class="signup">Sign Up</button>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="productintro" value="arcprod">
+					<h1>Arcadian Matte Paste</h1>
+					<img src="./images/arcadian.jpg" alt="arcprod" />
+				</div>
+				<!--Description of product-->
+				<div class="proddesc">
+					<p>
+						<span id="proddescription"></span>
+						<script src="js/product.js"></script>
+					</p>
+					<div id="price" value="30">
+						<b>Price:</b> $30
+					</div>
+					<div id="quantity">
+						<b>Quantity: </b>
+						<input type="number" id="quantity" name="quantity" placeholder="0" min="1" max="5" onchange="calcTotal(this.value)">
+					</div>
+					<div id="total">
+						<b>Total: </b>$<span id ="totalValue">0</span>
+					</div>
+				</div>
+				<div class="cta">
+					<button class="cta-add">Add To Cart</button>
+				</div>
+			</div>
+		</main>
+	<!--Footer of website-->
+	<footer>
+		<div class="footer-wrapper">
+			<p>© Hair Boys</p>
+			<p>Created by Kuo-Chen Lee and Thalia Lin</p>
+		</div>
+	</footer>
+
+	</body>
+</html>

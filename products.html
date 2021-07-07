@@ -1,0 +1,104 @@
+<!--Products/Categories page for website-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Products</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--Free shipping bar-->
+			<div class="freeshippingbar">
+				FREE SHIPPING ON ALL CANADIAN ORDERS OVER $50
+			</div>
+			<!--Logo area-->
+			<div class="logo-container">
+				<a class="nav-link" href=index.html><img src="./images/WebLogoSM.png" class="logo-header" alt="logo" /></a>
+			</div>
+			<!--Navigation bar and search bar-->
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href=index.html>Home</a></li>
+					<li><a class="nav-link" href=products.html>Products</a></li>
+					<li><a class="nav-link" href="index.html#brands">Brands</a></li>
+					<li><a class="nav-link" href="index.html#about-us">About Us</a></li>
+					<li>
+						<form name="search" action="results.html" method="get">
+							<div class ="searchDrop">
+							<button type="submit" id="searchButton"><img src="./images/searchicon.png" alt="searchicon"></button>
+								<div class="searchDropContent">
+									<input id="searchbar" type="text" placeholder="Search" onkeyup="searchfilter()">
+									<ul id="menulist">
+										<li class="menuprod"><a href ="productarcadian.html">Arcadian Matte Paste</a></li>
+										<li class="menuprod"><a href ="productarcadianstyling.html">Arcadian Styling Pomade</a></li>
+										<li class="menuprod"><a href ="productdapperboy.html">Dapper Boy Pomade</a></li>
+										<li class="menuprod"><a href ="productflagship.html">Flagship Dead Sea Clay</a></li>
+										<li class="menuprod"><a href ="productgrimgreasematte.html">Grim Grease Matte</a></li>
+										<li class="menuprod"><a href ="productgrimgrease.html">Grim Grease Medium</a></li>
+										<li class="menuprod"><a href ="productlockharts.html">Lockharts Gonzo Grease</a></li>
+										<li class="menuprod"><a href ="productreuzelgreen.html">Reuzel Green Pomade</a></li>
+										<li class="menuprod"><a href ="productreuzel.html">Reuzel Matte Pomade</a></li>
+										<li class="menuprod"><a href ="productshearrevival.html">Shear Revival American Gardens</a></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</nav>
+			<!--Cart and signup button-->
+			<div class="cart">
+				<img src="./images/cart.svg" alt="cart" />
+				<button class="signup">Sign Up</button>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="products">
+					<h1>Products</h1>
+					<!--Drop down menu for product categories-->
+					<div class="dropdown">
+						<button class="dropbtn">Product Type</button>
+						<div class="dropdown-content">
+							<a class="nav-link" href="products.html#clays">Clays</a>
+							<a class="nav-link" href="products.html#pastes">Pastes</a>
+							<a class="nav-link" href="products.html#pomades">Pomades</a>
+						</div>
+					</div>
+					<!--Clay products-->
+					<div id="clays">
+						<h2>Clays</h2>
+						<a href="productflagship.html"><img src="./images/flagship.jpg" alt="flagprod" /></a>
+						<a href="productshearrevival.html"><img src="./images/shearrevival.jpg" alt="shearprod" /></a>
+						<a href="productgrimgreasematte.html"><img src="./images/grimgreasematte.jpg" alt="ggmatteprod" /></a>
+					</div>
+					<!--Paste products-->
+					<div id="pastes">
+						<h3>Pastes</h3>
+						<a href="productarcadian.html"><img src="./images/arcadian.jpg" alt="arcprod" /></a>
+						<a href="productgrimgrease.html"><img src="./images/grimgreasegreen.jpg" alt="gggprod" /></a>
+						<a href="productdapperboy.html"><img src="./images/dapperboy.jpg" alt="dapperboyprod" /></a>
+					</div>
+					<!--Pomade products-->
+					<div id="pomades">
+						<h4>Pomades</h4>
+						<a href="productlockharts.html"><img src="./images/lockharts.jpg" alt="lockprod" /></a>
+						<a href="productreuzel.html"><img src="./images/reuzelmatte.jpg" alt="reuzprod" /></a>
+						<a href="productarcadianstyling.html"><img src="./images/arcadianstyling.jpg" alt="arcstylingprod" /></a>
+						<a href="productreuzelgreen.html"><img src="./images/reuzelgreen.jpg" alt="reuzelgreenprod" /></a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--Footer of website-->
+		<footer>
+			<div class="footer-wrapper">
+				<p>© Hair Boys</p>
+				<p>Created by Kuo-Chen Lee and Thalia Lin</p>
+			</div>
+		</footer>
+	</body>
+</html>

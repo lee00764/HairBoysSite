@@ -1,0 +1,492 @@
+/*<-----------Start all page CSS----------->*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #5f5f79;
+}
+
+header {
+	display: flex;
+	width: 90%;
+	height: 100px;
+	margin: 10px auto;
+	align-items: center;
+}
+
+.freeshippingbar{
+	top: 0px;
+	text-align:center;
+	padding: 6px 10px;
+	left: 0px;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	position: absolute;
+	background-color: #e4e4e4;
+	font-size: 11px;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+	flex: 1;
+	margin-top: 60px;
+}
+
+nav {
+	flex: 2;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav-links img{
+	padding-left: 5px;
+}
+
+.nav-links img:hover{
+	opacity: 0.5;
+}
+
+.nav-link {
+	color: #5f5f79;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.nav-link:hover {
+	color: #969696;
+	font-weight: 600;
+}
+
+#searchButton{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.cart img:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.signup{
+	border: none;
+	background: #5f5f79;
+	color: white;
+	width: 70px;
+	height: 25px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px;
+}
+
+main h1{
+	text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size: 50px;
+	font-weight: 600;
+	margin: 30px 0px 30px 0px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	min-height: 90vh;
+	text-align: center;
+}
+
+main p {
+	font-size: 18px;
+}
+
+h2, h3, h4{
+	text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+button:hover{
+	opacity: 0.5;
+}
+
+.container{
+	display: inline-block;
+}
+
+/*<-----------Start Search Bar css----------->*/
+ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.searchDrop {
+	position: absolute;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #5f5f79;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+.searchDrop input {
+	width: 300px;
+	height: 30px;
+}
+
+.searchDropContent {
+	display: none;
+	position: relative;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.searchDropContent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.searchDrop:hover .searchDropContent {
+	display: block;
+}
+
+.menuprod:hover{
+	opacity: 0.5;
+}
+
+
+/*<-----------End Search Bar css----------->*/
+
+
+/*<-------------End All Page CSS------------->*/
+
+
+/*<-------------Start Landing Page CSS------------->*/
+.banner {
+	padding: 0px;
+}
+
+.banner img{
+	display: block;
+	margin: 0 auto;
+	width: 90%
+}
+
+.companyname h1{
+	text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.companyname p{
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.featured{
+	padding: 50px 0px 30px 0px;
+}
+
+.featprod {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.featprod img {
+	padding: 10px;
+	max-height: 400px;
+	max-width: 400px;
+	width: 300px;
+	height: 300px;
+}
+
+.featprod img:hover {
+	transform: scale(1.01);
+}
+
+#brands {
+	text-align: center;
+}
+
+.brands-logo-row1 img,
+.brands-logo-row2 img{
+	display: inline-block;
+	padding: 10px;
+}
+
+#about-us {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+	text-align: center;
+    letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.usphotos img{
+	display: inline-block;
+	max-height: 400px;
+	max-width: 400px;
+	padding: 20px;;
+}
+/*<-------------End Landing Page CSS------------->*/
+
+
+/*<-------------Start Product Page CSS------------->*/
+.products h1,
+.products h2,
+.products h3,
+.products h4 {
+	margin-top: 30px;
+}
+.products img{
+	display: inline-block;
+	padding: 10px;
+	max-height: 400px;
+	max-width: 400px;
+	width: 300px;
+	height: 300px;
+}
+
+.products {
+	padding-bottom: 30px;
+}
+
+.products img:hover{
+	transform: scale(1.01);
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown .dropbtn {
+	font-weight: 600;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #5f5f79;
+	padding: 14px 16px;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/*<-------------End Product Page CSS------------->*/
+
+
+/*<-------------Start Indiv Product Page CSS------------->*/
+.productintro h1 {
+	font-size: 30px;
+}
+
+.proddesc p{
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+  letter-spacing: 1px;
+	font-size: 18px;
+}
+
+#price, #total{
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+#quantity{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.cta {
+	align-items: center;
+	padding: 20px 0px 30px 0px;
+}
+
+.cta-add, .btn {
+	border: none;
+	background: #5f5f79;
+	color: white;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+/*<-------------End Indiv Product Page CSS------------->*/
+
+
+/*<-------------Start Search Results Page CSS ------------->*/
+#showallbutton, #ratingbutton, #pricebutton{
+	position: relative;
+	padding: 10px;
+}
+.searchbuttons{
+	position: relative;
+}
+
+.slidercontainer h4{
+	font-size: 16px;
+}
+
+.searchcontainer{
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+.searchcontainer p{
+	padding: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+  letter-spacing: 1px;
+	font-size: 15px;
+}
+
+.searchprod img{
+	padding: 10px;
+	max-height: 400px;
+	max-width: 400px;
+	width: 300px;
+	height: 300px;
+}
+
+.searchprod {
+	display: inline-block;
+}
+
+.searchprod p{
+	padding: 10px;
+}
+
+.searchprod img:hover {
+	transform: scale(1.01);
+}
+
+img#stars{
+	padding: 0px;
+	width: 100px;
+	height: 17px;
+}
+
+.sortResult {
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+  letter-spacing: 1px;
+	font-size: 18px;
+}
+
+#searchbuttons{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+#ratingbutton {
+  position: relative;
+  display: inline-block;
+}
+
+#pricebutton {
+  position: relative;
+  display: inline-block;
+}
+
+#filterdropdown{
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#ratingbutton:hover #filterdropdown {
+  display: block;
+}
+
+#pricebutton:hover #filterdropdown {
+  display: block;
+}
+
+.peakprod img{
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+}
+/*<-------------End Search Results Page CSS------------->*/
+
+
+/*<-------------Start Footer CSS-------------->*/
+.footer-wrapper{
+	position: relative;
+	background-color: #e4e4e4;
+	text-align: center;
+	display: flex;
+  justify-content: space-between;
+	padding: 20px 10%;
+	bottom: 0px;
+}
+
+.footer-wrapper p{
+	font-weight: bold;
+	font-size: 13px;
+}
+/*<-------------End Footer CSS------------->*/

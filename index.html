@@ -1,0 +1,113 @@
+<!--Index/Landing page for website-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hair Boys</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--Free shipping bar-->
+			<div class="freeshippingbar">
+				FREE SHIPPING ON ALL CANADIAN ORDERS OVER $50
+			</div>
+			<!--Logo area-->
+			<div class="logo-container">
+				<a class="nav-link" href=index.html><img src="./images/WebLogoSM.png" class="logo-header" alt="logo" /></a>
+			</div>
+			<!--Navigation bar and search bar-->
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href=index.html>Home</a></li>
+					<li><a class="nav-link" href=products.html>Products</a></li>
+					<li><a class="nav-link" href="#brands">Brands</a></li>
+					<li><a class="nav-link" href="#about-us">About Us</a></li>
+					<li>
+						<form name="search" action="results.html" onsubmit="return searchFunction();" method="get">
+							<div class ="searchDrop">
+							<button type="submit" id="searchButton"><img src="./images/searchicon.png" alt="searchicon"></button>
+								<div class="searchDropContent">
+									<input id="searchbar" type="text" placeholder="Search" onkeyup="searchfilter()">
+									<ul id="menulist">
+										<li class="menuprod"><a href ="productarcadian.html">Arcadian Matte Paste</a></li>
+										<li class="menuprod"><a href ="productarcadianstyling.html">Arcadian Styling Pomade</a></li>
+										<li class="menuprod"><a href ="productdapperboy.html">Dapper Boy Pomade</a></li>
+										<li class="menuprod"><a href ="productflagship.html">Flagship Dead Sea Clay</a></li>
+										<li class="menuprod"><a href ="productgrimgreasematte.html">Grim Grease Matte</a></li>
+										<li class="menuprod"><a href ="productgrimgrease.html">Grim Grease Medium</a></li>
+										<li class="menuprod"><a href ="productlockharts.html">Lockharts Gonzo Grease</a></li>
+										<li class="menuprod"><a href ="productreuzelgreen.html">Reuzel Green Pomade</a></li>
+										<li class="menuprod"><a href ="productreuzel.html">Reuzel Matte Pomade</a></li>
+										<li class="menuprod"><a href ="productshearrevival.html">Shear Revival American Gardens</a></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</nav>
+			<!--Cart and signup button-->
+			<div class="cart">
+				<img src="./images/cart.svg" alt="cart" />
+				<button class="signup">Sign Up</button>
+			</div>
+		</header>
+		<main>
+			<!--Company name and banner-->
+			<div class="companyname">
+				<h1>Hair Boys</h1>
+				<p>Purveyors of Fine Grooming Products</p>
+			</div>
+			<div class="banner">
+				<img src="./images/banner.jpg" alt="banner">
+			</div>
+			<!--Featured products-->
+			<div class="featured">
+				<h2>Featured Products</h2>
+			</div>
+			<div class="featprod">
+				<a href=productgrimgrease.html><img src="./images/grimgreasegreen.jpg" alt="ggprod" /></a>
+				<a href=productlockharts.html><img src="./images/lockharts.jpg" alt="lockprod" /></a>
+			</div>
+			<!--Brand logos of products-->
+			<div id="brands">
+				<h3>Brands</h3>
+				<br>
+				<div class="brands-logo-row1">
+					<img src="./images/arclogo.png" alt="arclogo">
+					<img src="./images/flaglogo.png" alt="flaglogo">
+					<img src="./images/grimlogo.png" alt="grimlogo">
+				</div>
+				<div class="brands-logo-row2">
+					<img src="./images/locklogo.png" alt="locklogo">
+					<img src="./images/reuzellogo.png" alt="reuzellogo">
+					<img src="./images/shearlogo.png" alt="shearlogo">
+				</div>
+			</div>
+			<!--About the website designers-->
+			<div id="about-us">
+				<h4>About Us</h4>
+				<br>
+				<div class="usphotos">
+					<img src="./images/KuoChen.jpg" alt="KuoChen">
+					<img src="./images/Thalia.jpg" alt="Thalia">
+				</div>
+				<p>
+					We are Kuo-Chen Lee and Thalia Lin.<br>
+					Two students at Algonquin College.<br>
+					We made this website!<br>
+				</p>
+			</div>
+		</main>
+	<!--Footer of website-->
+	<footer>
+		<div class="footer-wrapper">
+			<p>© Hair Boys</p>
+			<p>Created by Kuo-Chen Lee and Thalia Lin</p>
+		</div>
+	</footer>
+	</body>
+</html>
