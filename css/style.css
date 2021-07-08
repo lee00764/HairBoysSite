@@ -333,6 +333,11 @@ ul {
 	font-size: 30px;
 }
 
+.productintro img{
+    max-width: 400px;
+    height:400px;
+}
+
 .proddesc p{
 	padding: 10px;
 	text-align: center;
